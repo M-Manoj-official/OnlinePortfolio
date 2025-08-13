@@ -2,7 +2,7 @@
 const portfolioData = {
     about: "Hello, I'm Manoj, a passionate Front-End Developer with expertise in CSS. I enjoy crafting elegant, high-performing user interfaces. I am always eager to learn new technologies and collaborate on innovative projects. My goal is to create seamless digital experiences that delight users and solve real-world problems.",
     profilepic: {
-        src: "./assets/download.jpg",
+        src: "./assets/1000048398.jpg",
         alt: "A Boy image"
     },
 
