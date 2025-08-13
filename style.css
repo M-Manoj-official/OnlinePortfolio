@@ -1,0 +1,346 @@
+body {
+    font-family: 'Mozilla Text', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: black;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    --accent-color: #7e5a9b;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background-color: #7e5a9b !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section > h2 {
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    border-left: none;
+    padding-left: 0;
+    border-bottom: 4px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.abtimg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about {
+    padding-right: 30px;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+#profilepic {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#about > div:last-child {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+a.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+a.icon-btn:hover {
+    background: #9a48d0;
+    color: white;
+}
+
+#skills-list,
+#tool-list {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 10px 15px;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    width: fit-content;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+#skills-list li,
+#tool-list li {
+    background-color: #9a48d0;
+    color: white;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.95rem;
+}
+
+.project-list, .row, .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-project {
+    background-color: #9a48d0;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.btn-project:hover {
+    background-color: #B288C0;
+    color: black;
+}
+
+#education-list li,
+#experience-list li {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#cv {
+    display: block;
+    margin: 40px auto 0 auto;
+    position: static;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    z-index: auto;
+    padding: 12px 24px;
+    background-color: #9a48d0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#cv a {
+    color: white;
+    text-decoration: none;
+}
+
+#cv:hover {
+    background-color: #7e5a9b;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.6rem;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    .abtimg {
+        flex-direction: column;
+    }
+
+    #profilepic {
+        width: 120px;
+    }
+
+    a.icon-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #skills-list li,
+    #tool-list li {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    #skills-list li,
+    #tool-list li {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    a.icon-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+        --accent-color: #9a48d0;
+    }
+
+    .navbar {
+        background-color: #1f1f1f !important;
+    }
+
+    h2 {
+        border-bottom: 4px solid var(--accent-color);
+        border-left: none;
+        padding-left: 0;
+    }
+
+    a.icon-btn {
+        background: #333;
+        color: #ccc;
+    }
+    
+    a.icon-btn:hover {
+        background: #9a48d0;
+        color: white;
+    }
+
+    .card {
+        background-color: #2c2c2c;
+        color: white;
+    }
+
+    footer {
+        background-color: #222;
+        color: white;
+    }
+
+    #education-list li,
+    #experience-list li {
+        background-color: #333;
+        color: #e0e0e0;
+    }
+    #education-list li:hover,
+    #experience-list li:hover {
+        background-color: #444;
+    }
+    #skills-list li,
+    #tool-list li { 
+        background-color: #7e5a9b;
+        color: white;
+    }      
+    #skills-list li:hover,
+    #tool-list li:hover {
+        background-color: #9a48d0;
+    }
+    .btn-project {
+        background-color: #7e5a9b;
+        color: aliceblue;
+    }   
+    .btn-project:hover {
+        background-color: #9a48d0;
+        color: black;
+    }   
+    .abtimg {
+        color: white;
+    }  
+}
