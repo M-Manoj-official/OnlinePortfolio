@@ -9,7 +9,7 @@ const portfolioData = {
     projects: [
         { title: "Rock Paper Scissor", description: "A Rock paper scisscor game to play with computer", link: "https://share.google/1elWCqiXQkBR0tLpF" },
         { title: "To Do List", description: "Designed a Basic To Do List with JavaScript", link: "https://share.google/AqvSgUjiPcbneNQEf" },
-        { title: "Portfolio Website", description: "Personal portfolio website to showcase my skills and projects", link: "https://github.com/M-Manoj-official/portfolio" }
+        { title: "Portfolio Website", description: "Personal portfolio website to showcase my skills and projects", link: "https://github.com/M-Manoj-official/OnlinePortfolio" }
     ],
 
     skills: ["HTML", "CSS", "JavaScript", "UI/UX Design", "Graphic Design", "Bootstrap", "Responsive Design"],
